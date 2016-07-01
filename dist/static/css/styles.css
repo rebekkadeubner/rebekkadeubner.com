@@ -1,0 +1,383 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'HelveticaNeueExtended';
+  src: url("../css/fonts/HelveticaNeue-Ext.eot");
+  src: local("☺"), url("../css/fonts/HelveticaNeue-Ext.woff") format("woff"), url("../css/fonts/HelveticaNeue-Ext.ttf") format("truetype"), url("../css/fonts/HelveticaNeue-Ext.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeueExtended';
+  src: url("../css/fonts/HelveticaNeue-MediumExt.eot");
+  src: local("☺"), url("../css/fonts/HelveticaNeue-MediumExt.woff") format("woff"), url("../css/fonts/HelveticaNeue-MediumExt.ttf") format("truetype"), url("../css/fonts/HelveticaNeue-MediumExt.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+body {
+  font: 10px / 18px "HelveticaNeueExtended", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: #000; }
+  body ::selection {
+    color: blue;
+    background: transparent; }
+
+h1 {
+  font-size: 20px;
+  color: #000;
+  line-height: 1.5; }
+
+.container {
+  position: absolute;
+  margin: auto;
+  left: 30px;
+  right: 30px; }
+
+.text .title {
+  font-size: 16px; }
+.text .detail {
+  display: none;
+  max-width: 400px; }
+
+.collection {
+  margin-top: 40px; }
+  .collection .gallery .small {
+    float: left;
+    width: auto;
+    max-height: 125px;
+    margin: 40px 40px 0px 0px;
+    cursor: zoom-in; }
+  .collection .gallery .large {
+    width: auto;
+    max-height: 90%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: zoom-out;
+    z-index: 99; }
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 98;
+  display: none; }
+
+img, video {
+  width: 100%; }
+
+.journal {
+  margin-top: 100px; }
+
+.wrapper {
+  max-width: 100%;
+  margin: auto; }
+
+.blank {
+  width: 100%;
+  height: 60px; }
+
+.caption {
+  padding: 15px 30px 90px; }
+
+.col-1 {
+  width: 100%; }
+  .col-1 .content {
+    max-width: calc(100% - 60px);
+    margin: auto; }
+
+.col-2 {
+  width: 50%;
+  float: left; }
+  .col-2 .content {
+    max-width: calc(100% - 60px);
+    margin: auto; }
+
+.col-3 {
+  width: 33.3%;
+  float: left; }
+  .col-3 .content {
+    max-width: calc(100% - 60px);
+    margin: auto; }
+
+.clear {
+  clear: both; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 96;
+  display: block; }
+
+.container {
+  position: absolute;
+  margin: auto;
+  left: 30px;
+  right: 30px; }
+
+.menu {
+  position: fixed;
+  z-index: 100; }
+
+.show {
+  display: block; }
+
+.projects {
+  margin-top: 150px; }
+
+.row {
+  position: relative;
+  width: 100%;
+  height: 600px; }
+  .row .left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%; }
+  .row .right {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%; }
+
+.page-project {
+  overflow: hidden; }
+
+.hidden {
+  display: none; }
+
+.view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  cursor: default; }
+  .view .full {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; }
+  .view .left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%; }
+  .view .right {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%; }
+
+.white {
+  background-color: white; }
+
+.center {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
+
+.center-bottom {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
+
+.center-top {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.center-left {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto; }
+
+.center-right {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
+
+.top-left {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: auto; }
+
+.top-right {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: auto; }
+
+.bottom-left {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  margin: auto; }
+
+.bottom-right {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
+
+#test {
+  background: url("../images/test.jpg") center no-repeat;
+  background-size: cover; }
+
+#draggable {
+  position: absolute;
+  overflow: hidden;
+  top: 60px;
+  right: 60px;
+  z-index: 1;
+  cursor: default; }
+  #draggable .toolbar {
+    width: 240px;
+    height: 17px;
+    background-color: white;
+    border: 1px solid black; }
+    #draggable .toolbar:hover .close {
+      opacity: 1;
+      display: inline-block; }
+      #draggable .toolbar:hover .close:hover {
+        cursor: pointer; }
+    #draggable .toolbar .close-icon {
+      position: absolute;
+      display: block;
+      width: 9px;
+      height: 9px;
+      top: 4px;
+      left: 4px;
+      background: url("../images/close-icon.png") center no-repeat;
+      background-size: cover; }
+      #draggable .toolbar .close-icon:hover {
+        cursor: pointer; }
+    #draggable .toolbar .close {
+      opacity: 0;
+      position: absolute;
+      left: 21px;
+      top: 0px;
+      text-transform: uppercase;
+      font-size: 8px;
+      font-weight: 600; }
+  #draggable .content {
+    position: relative;
+    top: -1px;
+    overflow: hidden;
+    z-index: 1;
+    width: 240px;
+    height: 360px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move; }
+    #draggable .content p {
+      width: 220px;
+      height: 316px;
+      margin-right: 0px;
+      overflow-y: scroll;
+      margin-left: 0px;
+      padding-left: 13px;
+      padding-right: 40px;
+      padding: 10px 40px 20px 13px;
+      margin-bottom: 30px; }
+
+.view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  cursor: default; }
+  .view .align-left {
+    position: relative;
+    height: 100%; }
+    .view .align-left img {
+      width: auto;
+      height: 100%; }
+  .view .align-top {
+    position: relative;
+    width: 100%; }
+    .view .align-top img {
+      width: 100%;
+      height: auto; }
+
+/*# sourceMappingURL=styles.css.map */
