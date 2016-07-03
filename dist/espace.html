@@ -12,23 +12,31 @@
 <body>
 
 
-<div class="menu">
-	<ul>
-		<li>
-			</li><a href="index.html">Rebekka Deubner</a>
-		</li>
-		<li>
-			</li><a href="journal.html">Journal</a>
-		</li>
-		<li>
-			</li><a href="espace.html">En espace</a>
-		</li>					
-	</ul>
+<div class="container">
+	<div class="sitenav">
+		<div class="index">
+			<a class="nav-index" href="index.html">Index</a>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li>
+					</li><a class="nav-infos" href="info.html">Rebekka Deubner</a>
+				</li>
+				<li>
+					</li><a class="nav-journal" href="journal.html">Journal</a>
+				</li>
+				<li>
+					</li><a class="nav-espace" href="espace.html">En espace</a>
+				</li>					
+			</ul>
+		</div>	
+	</div>
 </div>
 
+
+
 <div class="overlay"></div>
-
-
 
 <div class="background"></div>
 
@@ -36,10 +44,9 @@
 
 
 <div class="container">
-	<div class="espace">
-	
-	
 	<div class="wrapper">
+	
+	
 		<div class="collection">
 
 			<div class="text">
@@ -104,6 +111,11 @@
 		effect : "fadeIn",
 		threshold : 100
 	});
+
+
+	$('.sitenav a').removeClass('current');
+    $('.nav-espace').addClass('current');
+
 </script>
 
 

@@ -49,8 +49,8 @@ table {
   font-weight: 500;
   font-style: normal; }
 body {
-  font: 10px / 18px "HelveticaNeueExtended", sans-serif;
-  letter-spacing: 1.5px;
+  font: 14px / 22px -apple-system, ".SFNSText-Regular", "Roboto", "Times New Roman", serif;
+  letter-spacing: 0;
   font-weight: 400;
   color: #000; }
   body ::selection {
@@ -62,11 +62,9 @@ h1 {
   color: #000;
   line-height: 1.5; }
 
-.container {
-  position: absolute;
-  margin: auto;
-  left: 30px;
-  right: 30px; }
+.espace {
+  width: calc(100% - 80px);
+  margin: auto; }
 
 .text .title {
   font-size: 16px; }
@@ -109,7 +107,7 @@ img, video {
   margin-top: 100px; }
 
 .wrapper {
-  max-width: 100%;
+  max-width: calc(100% - 80px);
   margin: auto; }
 
 .blank {
@@ -121,23 +119,14 @@ img, video {
 
 .col-1 {
   width: 100%; }
-  .col-1 .content {
-    max-width: calc(100% - 60px);
-    margin: auto; }
 
 .col-2 {
   width: 50%;
   float: left; }
-  .col-2 .content {
-    max-width: calc(100% - 60px);
-    margin: auto; }
 
 .col-3 {
   width: 33.3%;
   float: left; }
-  .col-3 .content {
-    max-width: calc(100% - 60px);
-    margin: auto; }
 
 .clear {
   clear: both; }
@@ -161,18 +150,17 @@ img, video {
 .container {
   position: absolute;
   margin: auto;
-  left: 30px;
-  right: 30px; }
-
-.menu {
-  position: fixed;
-  z-index: 100; }
+  max-width: 1280px;
+  left: 0;
+  right: 0; }
 
 .show {
   display: block; }
 
 .projects {
-  margin-top: 150px; }
+  margin: auto;
+  position: relative;
+  width: calc(100% - 80px); }
 
 .row {
   position: relative;
@@ -199,14 +187,12 @@ img, video {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: transparent;
   overflow: hidden;
   cursor: default; }
   .view .full {
     position: relative;
     width: 100%;
-    height: 100%;
-    background-color: transparent; }
+    height: 100%; }
   .view .left {
     position: relative;
     float: left;
@@ -220,6 +206,9 @@ img, video {
 
 .white {
   background-color: white; }
+
+.null {
+  background-color: transparent; }
 
 .center {
   position: absolute;
@@ -379,5 +368,35 @@ img, video {
     .view .align-top img {
       width: 100%;
       height: auto; }
+
+.sitenav {
+  position: fixed;
+  width: calc(100% - 80px);
+  height: 80px;
+  margin: auto;
+  z-index: 100;
+  right: 40px;
+  left: 40px; }
+  .sitenav .current {
+    border-bottom: 1px solid black;
+    padding-bottom: 2px; }
+  .sitenav a {
+    color: #000;
+    text-decoration: none; }
+    .sitenav a:hover {
+      border-bottom: 1px solid black;
+      padding-bottom: 2px; }
+  .sitenav .index {
+    position: absolute;
+    top: 20px;
+    left: 0; }
+  .sitenav .menu {
+    position: absolute;
+    top: 20px;
+    right: 0; }
+    .sitenav .menu a {
+      margin-left: 40px; }
+    .sitenav .menu li {
+      float: left; }
 
 /*# sourceMappingURL=styles.css.map */

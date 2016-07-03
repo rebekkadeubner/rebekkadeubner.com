@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rebekka Deubner</title>
+    <link type="text/css" rel="stylesheet" href="static/css/styles.css">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="static/images/" sizes="32x32" />
+    <link rel="icon" type="image/png" href="static/images/" sizes="16x16" />
+
+</head>
+
+<body>
+
+
+<% include ../src/partials/menu.html %>
+
+<div class="overlay"></div>
+
+<div class="background"></div>
+
+
+
+
+<div class="container">
+	<div class="wrapper">
+	
+	
+		<div class="collection">
+
+			<div class="text">
+				<h1 class="title">Project title<br>book serie about death ▼</h1>
+				<div class="detail">
+					<p>Dans la série Fragments amoureux le corps forme le signe d'un langage organique qui se déploie en silence dans l'espace selon un pur jeu visuel et sensuel.</p>
+				</div>
+			</div>
+
+			<div class="gallery">
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test2.jpg" data-original="static/images/test2.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test2.jpg" data-original="static/images/test2.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test2.jpg" data-original="static/images/test2.jpg" alt="Image"/>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="wrapper">
+		<div class="collection">
+
+			<div class="text">
+				<h1 class="title">Project title<br>book serie about death ▼</h1>
+				<div class="detail">
+					<p>Dans la série Fragments amoureux le corps forme le signe d'un langage organique qui se déploie en silence dans l'espace selon un pur jeu visuel et sensuel.</p>
+				</div>
+			</div>
+
+			<div class="gallery">
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test2.jpg" data-original="static/images/test2.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test.jpg" data-original="static/images/test.jpg" alt="Image"/>
+				<img class="lazy small" src="static/images/test2.jpg" data-original="static/images/test2.jpg" alt="Image"/>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+	</div>
+</div>
+
+
+
+<script src="static/js/jquery-1.11.3.min.js"></script>
+<script src="static/js/LazyLoad.js"></script>
+<script src="static/js/main.js"></script>
+
+<script>
+	$("img.lazy").lazyload({
+		effect : "fadeIn",
+		threshold : 100
+	});
+
+
+	$('.sitenav a').removeClass('current');
+    $('.nav-espace').addClass('current');
+
+</script>
+
+
+</body>
+</html>
