@@ -49,7 +49,7 @@ table {
   font-weight: 500;
   font-style: normal; }
 body {
-  font: 14px / 22px -apple-system, ".SFNSText-Regular", "Roboto", "Times New Roman", serif;
+  font: 11px / 20px -apple-system, ".SFNSText-Regular", "Roboto", "Times New Roman", serif;
   letter-spacing: 0;
   font-weight: 400;
   color: #000; }
@@ -160,7 +160,10 @@ img, video {
 .projects {
   margin: auto;
   position: relative;
+  top: 120px;
   width: calc(100% - 80px); }
+  .projects img {
+    z-index: 1000; }
 
 .row {
   position: relative;
@@ -295,39 +298,10 @@ img, video {
 #draggable {
   position: absolute;
   overflow: hidden;
-  top: 60px;
-  right: 60px;
+  top: 40px;
+  left: 40px;
   z-index: 1;
   cursor: default; }
-  #draggable .toolbar {
-    width: 240px;
-    height: 17px;
-    background-color: white;
-    border: 1px solid black; }
-    #draggable .toolbar:hover .close {
-      opacity: 1;
-      display: inline-block; }
-      #draggable .toolbar:hover .close:hover {
-        cursor: pointer; }
-    #draggable .toolbar .close-icon {
-      position: absolute;
-      display: block;
-      width: 9px;
-      height: 9px;
-      top: 4px;
-      left: 4px;
-      background: url("../images/close-icon.png") center no-repeat;
-      background-size: cover; }
-      #draggable .toolbar .close-icon:hover {
-        cursor: pointer; }
-    #draggable .toolbar .close {
-      opacity: 0;
-      position: absolute;
-      left: 21px;
-      top: 0px;
-      text-transform: uppercase;
-      font-size: 8px;
-      font-weight: 600; }
   #draggable .content {
     position: relative;
     top: -1px;
@@ -336,7 +310,6 @@ img, video {
     width: 240px;
     height: 360px;
     background-color: white;
-    border: 1px solid black;
     cursor: move; }
     #draggable .content p {
       width: 220px;
@@ -353,7 +326,6 @@ img, video {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: transparent;
   overflow: hidden;
   cursor: default; }
   .view .align-left {
@@ -371,7 +343,7 @@ img, video {
 
 .sitenav {
   position: fixed;
-  width: calc(100% - 80px);
+  width: 1200px;
   height: 80px;
   margin: auto;
   z-index: 100;
@@ -389,11 +361,11 @@ img, video {
   .sitenav .index {
     position: absolute;
     top: 20px;
-    left: 0; }
+    left: 0px; }
   .sitenav .menu {
     position: absolute;
     top: 20px;
-    right: 0; }
+    left: 20px; }
     .sitenav .menu a {
       margin-left: 40px; }
     .sitenav .menu li {

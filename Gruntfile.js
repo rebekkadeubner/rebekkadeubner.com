@@ -91,6 +91,7 @@ module.exports = function(grunt) {
 					'dist/fragments.html' : ['src/fragments.ejs'],
 					'dist/erscheinen.html' : ['src/erscheinen.ejs'],
 					'dist/whitetrash.html' : ['src/whitetrash.ejs'],
+					'dist/rupture.html' : ['src/rupture.ejs'],
 					// 'dist/terms.html' : ['src/terms.ejs'],																									
 				},
 				ext: '.html',

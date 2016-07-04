@@ -36,7 +36,11 @@
 .projects {
     margin: auto;
     position: relative;
+    top: 120px;
     width: calc(100% - 80px);
+    img {
+        z-index: 1000;
+    }
 }
 
 
