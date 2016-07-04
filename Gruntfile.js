@@ -92,6 +92,7 @@ module.exports = function(grunt) {
 					'dist/erscheinen.html' : ['src/erscheinen.ejs'],
 					'dist/whitetrash.html' : ['src/whitetrash.ejs'],
 					'dist/rupture.html' : ['src/rupture.ejs'],
+					'dist/vinnouveau.html' : ['src/vinnouveau.ejs'],
 					'dist/softedge.html' : ['src/softedge.ejs'],
 					// 'dist/terms.html' : ['src/terms.ejs'],																									
 				},
