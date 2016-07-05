@@ -160,7 +160,7 @@ img, video {
 .projects {
   margin: auto;
   position: relative;
-  top: 120px;
+  top: 30px;
   width: calc(100% - 80px); }
   .projects img {
     z-index: 1000; }
