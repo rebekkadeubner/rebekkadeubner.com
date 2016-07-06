@@ -87,14 +87,31 @@ module.exports = function(grunt) {
 					'dist/info.html' : ['src/info.ejs'],
 					'dist/journal.html' : ['src/journal.ejs'],
 					'dist/espace.html' : ['src/espace.ejs'],
+
 					'dist/desfilles.html' : ['src/desfilles.ejs'],
+					'dist/desfilles-infos.html' : ['src/desfilles-infos.ejs'],
+
 					'dist/fragments.html' : ['src/fragments.ejs'],
+					'dist/fragments-infos.html' : ['src/fragments-infos.ejs'],
+
 					'dist/erscheinen.html' : ['src/erscheinen.ejs'],
-					'dist/whitetrash.html' : ['src/whitetrash.ejs'],
+					'dist/erscheinen-infos.html' : ['src/erscheinen-infos.ejs'],					
+
 					'dist/rupture.html' : ['src/rupture.ejs'],
+					'dist/rupture-infos.html' : ['src/rupture-infos.ejs'],					
+
+					'dist/whitetrash.html' : ['src/whitetrash.ejs'],
+					'dist/whitetrash-infos.html' : ['src/whitetrash-infos.ejs'],					
+
 					'dist/vinnouveau.html' : ['src/vinnouveau.ejs'],
+					'dist/vinnouveau-infos.html' : ['src/vinnouveau-infos.ejs'],					
+
 					'dist/softedge.html' : ['src/softedge.ejs'],
-					// 'dist/terms.html' : ['src/terms.ejs'],																									
+					'dist/softedge-infos.html' : ['src/softedge-infos.ejs'],
+
+					'dist/nacht.html' : ['src/nacht.ejs'],
+					'dist/nacht-infos.html' : ['src/nacht-infos.ejs'],
+																									
 				},
 				ext: '.html',
 			}

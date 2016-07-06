@@ -1,10 +1,21 @@
-
 .page-project {
     overflow: hidden;
+
 }
 
 
-// View Layout
+// Description
+
+.project-infos {
+    margin-top: 120px;
+    p {
+        max-width: 400px;
+    }
+}
+
+
+
+// Views Layout
 
 .hidden {
     display: none;
@@ -137,52 +148,5 @@
     margin: auto; 
 }
 
-
-
-// Custom Background
-
-#test {
-    background: url("../images/test.jpg") center no-repeat;
-    background-size: cover;
-}
-
-
-
-// Draggable info box
-
-#draggable {
-    position: absolute;
-    overflow: hidden;
-    top: 40px;
-    left: 40px;
-    z-index: 1;
-    cursor: default;
-    // box-shadow: 0 5px 20px rgba(0,0,0,.15);
-    // border-radius: 5px;
-    // border: 1px solid #fafafa;
-    
-    .content {
-        position: relative;
-        top: -1px;
-        overflow: hidden;
-        z-index: 1;
-        width: 240px;
-        height: 360px;   
-        background-color: white;
-        cursor: move;       
-        p {
-            width: 220px;
-            height: 316px;
-            margin-right: 0px;
-            overflow-y: scroll;
-            margin-left: 0px;
-            padding-left: 13px;
-            padding-right: 40px;
-            padding: 10px 40px 20px 13px;
-            margin-bottom: 30px;           
-        }
-
-    }
-}
 
 
