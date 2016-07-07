@@ -135,8 +135,6 @@ img, video {
   position: relative;
   top: 30px;
   width: calc(100% - 80px); }
-  .projects img {
-    z-index: 1000; }
 
 .row {
   position: relative;
