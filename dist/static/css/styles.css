@@ -57,15 +57,10 @@ body {
     color: blue;
     background: transparent; }
 
-h1 {
-  font-size: 20px;
-  color: #000;
-  line-height: 1.5; }
-
 .espace {
   padding-bottom: 120px; }
   .espace .article {
-    padding-top: 120px; }
+    padding-top: 85px; }
     .espace .article img {
       padding-bottom: 20px; }
     .espace .article p {
@@ -74,7 +69,7 @@ h1 {
 .journal {
   padding-bottom: 120px; }
   .journal .article {
-    padding-top: 120px; }
+    padding-top: 85px; }
     .journal .article p {
       padding: 10px 0; }
 
@@ -162,9 +157,13 @@ img, video {
   overflow: hidden; }
 
 .project-infos {
-  margin-top: 120px; }
-  .project-infos p {
-    max-width: 400px; }
+  margin-top: 80px;
+  max-width: 400px;
+  padding-bottom: 100px; }
+  .project-infos h1 {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 20px; }
 
 .hidden {
   display: none; }

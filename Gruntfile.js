@@ -109,8 +109,8 @@ module.exports = function(grunt) {
 					'dist/softedge.html' : ['src/softedge.ejs'],
 					'dist/softedge-infos.html' : ['src/softedge-infos.ejs'],
 
-					'dist/nacht.html' : ['src/nacht.ejs'],
-					'dist/nacht-infos.html' : ['src/nacht-infos.ejs'],
+					'dist/nackt.html' : ['src/nackt.ejs'],
+					'dist/nackt-infos.html' : ['src/nackt-infos.ejs'],
 																									
 				},
 				ext: '.html',
