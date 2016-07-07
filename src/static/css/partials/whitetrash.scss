@@ -5,7 +5,7 @@
     overflow: hidden;
     cursor: default;
     .align-left {
-		position: relative;
+		position: absolute;
 		height: 100%;
 		img {
 			width: auto;
@@ -14,7 +14,7 @@
 		}
     }
     .align-top {
-		position: relative;
+		position: absolute;
 		width: 100%;
 		img {
 			width: 100%;

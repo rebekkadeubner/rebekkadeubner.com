@@ -63,42 +63,20 @@ h1 {
   line-height: 1.5; }
 
 .espace {
-  width: calc(100% - 80px);
-  margin: auto; }
+  padding-bottom: 120px; }
+  .espace .article {
+    padding-top: 120px; }
+    .espace .article img {
+      padding-bottom: 20px; }
+    .espace .article p {
+      padding: 10px 0; }
 
-.text .title {
-  font-size: 16px; }
-.text .detail {
-  display: none;
-  max-width: 400px; }
-
-.collection {
-  margin-top: 40px; }
-  .collection .gallery .small {
-    float: left;
-    width: auto;
-    max-height: 125px;
-    margin: 40px 40px 0px 0px;
-    cursor: zoom-in; }
-  .collection .gallery .large {
-    width: auto;
-    max-height: 90%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    cursor: zoom-out;
-    z-index: 99; }
-
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 98;
-  display: none; }
+.journal {
+  padding-bottom: 120px; }
+  .journal .article {
+    padding-top: 120px; }
+    .journal .article p {
+      padding: 10px 0; }
 
 img, video {
   width: 100%; }
@@ -303,13 +281,13 @@ img, video {
   overflow: hidden;
   cursor: default; }
   .view .align-left {
-    position: relative;
+    position: absolute;
     height: 100%; }
     .view .align-left img {
       width: auto;
       height: 100%; }
   .view .align-top {
-    position: relative;
+    position: absolute;
     width: 100%; }
     .view .align-top img {
       width: 100%;
