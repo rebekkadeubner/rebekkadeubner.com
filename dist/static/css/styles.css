@@ -60,7 +60,9 @@ body {
 .espace {
   padding-bottom: 120px; }
   .espace .article {
-    padding-top: 85px; }
+    padding-top: 85px;
+    width: 66%;
+    margin-left: 40px; }
     .espace .article img {
       padding-bottom: 20px; }
     .espace .article p {
