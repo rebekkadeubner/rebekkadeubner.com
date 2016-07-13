@@ -84,30 +84,30 @@ module.exports = function(grunt) {
 			all: {
 				files: {
 					'dist/index.html' : ['src/index.ejs'],
-					'dist/info.html' : ['src/info.ejs'],
+					'dist/infos.html' : ['src/info.ejs'],
 					'dist/journal.html' : ['src/journal.ejs'],
-					'dist/espace.html' : ['src/espace.ejs'],
+					'dist/enespace.html' : ['src/espace.ejs'],
 
-					'dist/desfilles.html' : ['src/desfilles.ejs'],
-					'dist/desfilles-infos.html' : ['src/desfilles-infos.ejs'],
+					'dist/desfilleslameretunegrotte.html' : ['src/desfilles.ejs'],
+					'dist/desfilleslameretunegrotte-infos.html' : ['src/desfilles-infos.ejs'],
 
-					'dist/fragments.html' : ['src/fragments.ejs'],
-					'dist/fragments-infos.html' : ['src/fragments-infos.ejs'],
+					'dist/fragmentsamoureux.html' : ['src/fragments.ejs'],
+					'dist/fragmentsamoureux-infos.html' : ['src/fragments-infos.ejs'],
 
 					'dist/erscheinen.html' : ['src/erscheinen.ejs'],
 					'dist/erscheinen-infos.html' : ['src/erscheinen-infos.ejs'],					
 
-					'dist/rupture.html' : ['src/rupture.ejs'],
-					'dist/rupture-infos.html' : ['src/rupture-infos.ejs'],					
+					'dist/ruptureinterne.html' : ['src/rupture.ejs'],
+					'dist/ruptureinterne-infos.html' : ['src/rupture-infos.ejs'],					
 
 					'dist/whitetrash.html' : ['src/whitetrash.ejs'],
 					'dist/whitetrash-infos.html' : ['src/whitetrash-infos.ejs'],					
 
-					'dist/vinnouveau.html' : ['src/vinnouveau.ejs'],
-					'dist/vinnouveau-infos.html' : ['src/vinnouveau-infos.ejs'],					
+					'dist/jaibulevinnouveau.html' : ['src/vinnouveau.ejs'],
+					'dist/jaibulevinnouveau-infos.html' : ['src/vinnouveau-infos.ejs'],					
 
-					'dist/softedge.html' : ['src/softedge.ejs'],
-					'dist/softedge-infos.html' : ['src/softedge-infos.ejs'],
+					'dist/onthesoftedge.html' : ['src/softedge.ejs'],
+					'dist/onthesoftedge-infos.html' : ['src/softedge-infos.ejs'],
 
 					'dist/nackt.html' : ['src/nackt.ejs'],
 					'dist/nackt-infos.html' : ['src/nackt-infos.ejs'],
